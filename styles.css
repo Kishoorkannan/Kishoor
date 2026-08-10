@@ -7,6 +7,12 @@
     cursor: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 :root {
     --primary: #050505;
     --secondary: #111111;
@@ -732,6 +738,8 @@ footer {
     .hero-wrapper, .about-grid, .highlights { grid-template-columns: 1fr; }
     .hero { min-height: auto; padding-top: 120px; padding-bottom: 40px; }
     .hero-content { text-align: center; }
+    .hero-image { display: flex; justify-content: center; }
+    .hero-banner { max-width: 320px; width: 100%; }
     .cta-buttons { justify-content: center; }
     
     .custom-cursor, .spotlight, .orb { display: none; }
