@@ -11,7 +11,6 @@
 
 <body>
     <!-- Custom Elements -->
-    <div class="custom-cursor" id="cursor"></div>
     <div class="spotlight" id="spotlight"></div>
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
@@ -439,17 +438,6 @@
     </div>
 
     <script>
-        // Custom Cursor
-        const cursor = document.getElementById('cursor');
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-        });
-
-        document.querySelectorAll('a, button, .project-card, .btn').forEach(el => {
-            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-        });
 
         // Spotlight
         const spotlight = document.getElementById('spotlight');
